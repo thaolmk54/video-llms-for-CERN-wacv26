@@ -90,7 +90,7 @@ with open("../abductiveEk100/post_processed_test_data_instances.json") as f:
         
         with open("../abductiveEk100/post_processed_train_data_instances.json") as f_ict:
             data_train = json.load(f_ict)
-            picked_instances = np.random.choice(data_train, 4, replace=False)
+            picked_instances = np.random.choice(data_train, 2, replace=False)
             for instance_ict in picked_instances:
                 print("Incontext prompt")
                 
